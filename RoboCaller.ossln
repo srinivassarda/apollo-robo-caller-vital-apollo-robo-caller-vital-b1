@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Pega Robotics Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{B45C44CD-E95B-43EF-AF7C-4D25776FBF5E}") = "RoboCaller", "RoboCaller\RoboCaller.osproj", "{D1995692-D4DA-4AE7-AD1B-55E90A2A01DE}"
+EndProject
+Project("{B45C44CD-E95B-43EF-AF7C-4D25776FBF5E}") = "Apollo", "Apollo\Apollo.osproj", "{4A767125-1D43-48C8-BB8B-A9179EDC8253}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B3A4614C-DBA6-46E4-9679-D0AC9C0B64B1} = {B3A4614C-DBA6-46E4-9679-D0AC9C0B64B1}
+	EndProjectSection
+EndProject
+Project("{B45C44CD-E95B-43EF-AF7C-4D25776FBF5E}") = "Vital", "Vital\Vital.osproj", "{B3A4614C-DBA6-46E4-9679-D0AC9C0B64B1}"
+EndProject
+Project("{B45C44CD-E95B-43EF-AF7C-4D25776FBF5E}") = "Vital-Appspot", "Vital-Appspot\Vital-Appspot.osproj", "{7B1C02CB-20B3-4A21-BDF0-E7DC27BFFDA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1995692-D4DA-4AE7-AD1B-55E90A2A01DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1995692-D4DA-4AE7-AD1B-55E90A2A01DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1995692-D4DA-4AE7-AD1B-55E90A2A01DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1995692-D4DA-4AE7-AD1B-55E90A2A01DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A767125-1D43-48C8-BB8B-A9179EDC8253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A767125-1D43-48C8-BB8B-A9179EDC8253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A767125-1D43-48C8-BB8B-A9179EDC8253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A767125-1D43-48C8-BB8B-A9179EDC8253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3A4614C-DBA6-46E4-9679-D0AC9C0B64B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A4614C-DBA6-46E4-9679-D0AC9C0B64B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A4614C-DBA6-46E4-9679-D0AC9C0B64B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A4614C-DBA6-46E4-9679-D0AC9C0B64B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B1C02CB-20B3-4A21-BDF0-E7DC27BFFDA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B1C02CB-20B3-4A21-BDF0-E7DC27BFFDA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B1C02CB-20B3-4A21-BDF0-E7DC27BFFDA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B1C02CB-20B3-4A21-BDF0-E7DC27BFFDA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

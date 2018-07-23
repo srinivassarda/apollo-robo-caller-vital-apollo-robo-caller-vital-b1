@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProductVersion>8.0</ProductVersion>
+    <ProjectGuid>4a767125-1d43-48c8-bb8b-a9179edc8253</ProjectGuid>
+    <RootNamespace>Apollo</RootNamespace>
+    <AssemblyName>Apollo</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <!-- Custom properties -->
+    <Name>Apollo</Name>
+    <Id>Project-8D5B66DF7AE4096</Id>
+    <Version>8.0.1087.0</Version>
+    <TransformationVersion>8.0.1026.0</TransformationVersion>
+    <ConfigurationFile>
+    </ConfigurationFile>
+    <StartupForm>
+    </StartupForm>
+    <TargetLevel>Driver</TargetLevel>
+    <!-- Deployment -->
+    <DeploymentFiles>
+    </DeploymentFiles>
+    <CustomUpgradeVersion>0.0</CustomUpgradeVersion>
+    <InteractionConfigurationFile>..\Interaction.xml</InteractionConfigurationFile>
+    <MessageDefinition />
+    <DebuggerPlatform>Default</DebuggerPlatform>
+    <StartupApplication />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <XmlDocumentation>False</XmlDocumentation>
+    <NoWarn>108</NoWarn>
+    <!-- Deployment -->
+    <DeploymentPackage>True</DeploymentPackage>
+    <DeploymentPath>bin\Debug\</DeploymentPath>
+    <DeploymentVersion>1.2</DeploymentVersion>
+    <DeploymentVersionIncrement>True</DeploymentVersionIncrement>
+    <DeploymentIncludeRunSettings>True</DeploymentIncludeRunSettings>
+    <DeploymentTranslators>True</DeploymentTranslators>
+    <DeploymentAssemblies>True</DeploymentAssemblies>
+    <DeploymentSign>False</DeploymentSign>
+    <DeploymentCertificate>
+    </DeploymentCertificate>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>False</DebugSymbols>
+    <XmlDocumentation>False</XmlDocumentation>
+    <NoWarn>108</NoWarn>
+    <!-- Deployment -->
+    <DeploymentPackage>True</DeploymentPackage>
+    <DeploymentPath>bin\Release\</DeploymentPath>
+    <DeploymentVersion>1.15</DeploymentVersion>
+    <DeploymentVersionIncrement>True</DeploymentVersionIncrement>
+    <DeploymentIncludeRunSettings>False</DeploymentIncludeRunSettings>
+    <DeploymentTranslators>True</DeploymentTranslators>
+    <DeploymentAssemblies>True</DeploymentAssemblies>
+    <DeploymentSign>False</DeploymentSign>
+    <DeploymentCertificate>
+    </DeploymentCertificate>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OpenSpanEnvVar>OPENSPAN_APPLICATION_PATH</OpenSpanEnvVar>
+    <OpenSpanPath>$(OPENSPAN_APPLICATION_PATH)</OpenSpanPath>
+  </PropertyGroup>
+  <Import Project="$(OpenSpanPath)\OpenSpan.targets" />
+  <ItemGroup>
+    <Reference Include="Interop.FREngine, Version=11.1.19.72, Culture=neutral, PublicKeyToken=2e1e7aca5d298f96">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\Interop.FREngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.ActiveX, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.ActiveX.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.Virtual, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.Virtual.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.VisualBasic6, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.VisualBasic6.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.Windows, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.WinInet, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.WinInet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.ApplicationFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.ApplicationFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.ApplicationFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.ApplicationFramework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Events, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Events.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.ExpressTranslators, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.ExpressTranslators.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Interactions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Interactions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Interactions.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Interactions.Controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.IPC, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.IPC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.NativeInterop, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.NativeInterop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Office, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Office.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Recording, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Recording.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Script, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Script.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Server.Client, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Server.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Threading, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Threading.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.TranslatorIpc, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.TranslatorIpc.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Virtual.Interfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Virtual.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OSComponents.Utilities.TestHarness, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c0cb69f111622a50">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OSComponents.Utilities.TestHarness.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Runtime.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Runtime.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Events" />
+    <Folder Include="Events\Interactions" />
+    <Folder Include="Events\Controls" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Procedures-StartUp" />
+    <Folder Include="Procedures" />
+    <Folder Include="Procedures\HomePage" />
+    <Folder Include="Procedures\Helper" />
+    <Folder Include="Procedures\ParticipantChart" />
+    <Folder Include="Procedures\ParticipantChart\Interactions" />
+    <Folder Include="Procedures\ParticipantChart\Interactions\Generic" />
+    <Folder Include="Procedures\ParticipantChart\Interactions\Generic\HIPAA" />
+    <Folder Include="Procedures\ParticipantChart\Interactions\UploadDocument" />
+    <Folder Include="Procedures\ParticipantChart\Interactions\OutboundCall" />
+    <Folder Include="Procedures\ParticipantChart\Interactions\UTCLetterVital" />
+    <Folder Include="Procedures\ParticipantChart\Generic" />
+    <Folder Include="Procedures\ParticipantChart\Tabs360" />
+    <Folder Include="Procedures\ParticipantChart\Tabs360\Demographics" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\ImportTypeMap.resx" />
+    <EmbeddedResource Include="Properties\MessageManifest.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApolloAdapter.os">
+      <SubType>Component</SubType>
+      <Id>WebAdapter-8D5B64208F34D6C</Id>
+    </Compile>
+    <Compile Include="Apollo_E_AllProjectsStarted.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5C0A144D3F3C7</Id>
+    </Compile>
+    <Compile Include="Events\Controls\Apollo_E_Timer_Tick.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5C24B21ED70E0</Id>
+    </Compile>
+    <Compile Include="Events\Controls\Apollo_E_WindowsSecurity_Created.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5B72C7C773BA2</Id>
+    </Compile>
+    <Compile Include="Events\Interactions\Apollo_E_CreateOutboundCall_ActivityStarted.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5B67656B45F94</Id>
+    </Compile>
+    <Compile Include="Events\Interactions\Apollo_E_Wrapup_ActivityStarted.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5B72B3CF7C28B</Id>
+    </Compile>
+    <Compile Include="Procedures-StartUp\Apollo_P_Kick_UploadDocument_Start.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5D1D81EC3D087</Id>
+    </Compile>
+    <Compile Include="Procedures-StartUp\Apollo_P_Kick_UTCVital_Start.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5C238F70FC422</Id>
+    </Compile>
+    <Compile Include="Procedures\Helper\Apollo_P_Help_CheckWIP.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5C4A7AAFB8299</Id>
+    </Compile>
+    <Compile Include="Procedures\Helper\Apollo_P_Help_SetASOCred.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5C0A5D243A66E</Id>
+    </Compile>
+    <Compile Include="Procedures\HomePage\Apollo_P_Home_PickItemFromWB.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5BFAB4835AFAC</Id>
+    </Compile>
+    <Compile Include="Procedures\HomePage\Apollo_P_Home_NavigateTo.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5B646B030667B</Id>
+    </Compile>
+    <Compile Include="Procedures\HomePage\Apollo_P_Home_SetOperatorAvailability.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5BFEB39FA096A</Id>
+    </Compile>
+    <Compile Include="Procedures\HomePage\Apollo_P_Home_Wrapup.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5B72B68C72D01</Id>
+    </Compile>
+    <Compile Include="Procedures\ParticipantChart\Generic\Apollo_P_Part_Gen_OpenParticipant.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5D142DD0550C5</Id>
+    </Compile>
+    <Compile Include="Procedures\ParticipantChart\Generic\Apollo_P_Part_Gen_CloseParticipant.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5C227A944A692</Id>
+    </Compile>
+    <Compile Include="Procedures\ParticipantChart\Generic\Apollo_P_Part_Gen_DlgClose.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5B71ED6ADBB8A</Id>
+    </Compile>
+    <Compile Include="Procedures\ParticipantChart\Generic\Apollo_P_Part_Gen_Switch360.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5C48B156FD174</Id>
+    </Compile>
+    <Compile Include="Procedures\ParticipantChart\Interactions\Generic\HIPAA\Apollo_P_Int_Gen_HIPAA_WarmTransfer.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5C015D0C6C4C6</Id>
+    </Compile>
+    <Compile Include="Procedures\ParticipantChart\Interactions\OutboundCall\Apollo_P_Part_Int_OutCall_Create.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5B646C8B063C7</Id>
+    </Compile>
+    <Compile Include="Procedures\ParticipantChart\Interactions\OutboundCall\Apollo_P_Part_Int_OutCall_StartProcess.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5B649DAA5817D</Id>
+    </Compile>
+    <Compile Include="Procedures\ParticipantChart\Interactions\UploadDocument\Apollo_P_Part_Int_UploadDocument_Create.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5CF83EE9E7406</Id>
+    </Compile>
+    <Compile Include="Procedures\ParticipantChart\Interactions\UploadDocument\Apollo_P_Part_Int_UploadDocument_StartProcess.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5D1D99117876E</Id>
+    </Compile>
+    <Compile Include="Procedures\ParticipantChart\Interactions\UTCLetterVital\Apollo_P_Part_Int_UTCLetter_StartProcess.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5BFB46EBFC2DB</Id>
+    </Compile>
+    <Compile Include="Procedures\ParticipantChart\Tabs360\Demographics\Apollo_P_Part_Tabs_Demo_Read.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5C48973F8E0D4</Id>
+    </Compile>
+    <Compile Include="_Apollo_GC.HelperScripts.cs">
+      <DependentUpon>_Apollo_GC.os</DependentUpon>
+      <Id>Script-8D5D1DAC9F8D586</Id>
+    </Compile>
+    <Compile Include="_Apollo_GC.os">
+      <SubType>Component</SubType>
+      <Id>GlobalContainer-8D5B66E876A1387</Id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApolloAdapter.res">
+      <DependentUpon>ApolloAdapter.os</DependentUpon>
+      <Deployment>DoNotDeploy</Deployment>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vital\Vital.osproj">
+      <Name>Vital</Name>
+      <Project>{b3a4614c-dba6-46e4-9679-d0ac9c0b64b1}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
